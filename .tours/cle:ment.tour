@@ -1,0 +1,45 @@
+{
+  "id": "a1d7085a-09e0-4bf9-927d-e4b9451f24fb",
+  "tourFile": "cle:ment.tour",
+  "title": "cle:ment",
+  "description": "A New Tour",
+  "createdAt": "2024-12-20 23:27:29",
+  "steps": [
+    {
+      "title": "Joueur.java:6",
+      "description": "La classe mère des entités des joueurs",
+      "file": "Joueur.java",
+      "line": 6
+    },
+    {
+      "title": "Loup.java:6",
+      "description": "Une classe fille",
+      "file": "Loup.java",
+      "line": 6
+    },
+    {
+      "title": "DummyStarter.java:25",
+      "description": "la map avec les joueurs et leurs roles,\non envoit le tout sur direct:sendRole au démarrage de l\u0027appli",
+      "file": "DummyStarter.java",
+      "line": 25
+    },
+    {
+      "title": "JoueurConverter.java:16",
+      "description": "ici, on construit un nouveau joueur et on lui donne son nom\n\navec @Converter, on enregistre la classe pour faire le\nMap.Enty\u003cString,Class\u003c? extends Joueur\u003e \u003d\u003e Joueur",
+      "file": "JoueurConverter.java",
+      "line": 16
+    },
+    {
+      "title": "RouterBuilder.java:19",
+      "description": "ici, on récupère les joueurs dans la map,\non split et pour chaque entry de la map, on convertit en joueur\npuis on balance au DAO pour sauver en base",
+      "file": "RouterBuilder.java",
+      "line": 19
+    },
+    {
+      "title": "RouterBuilder.java:27",
+      "description": "ici, toutes les 2sec on récupère les joueurs du DAO,\npuis on affiche le résultat de la méthode surchargée \npour chaque joueur",
+      "file": "RouterBuilder.java",
+      "line": 27
+    }
+  ]
+}
